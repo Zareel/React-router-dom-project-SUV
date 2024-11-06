@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 
 const Layout = () => {
   return (
-    <div>
+    <div className='bg-stone-900 text'>
         <Navbar/>
        <Outlet/>
         <Footer/>

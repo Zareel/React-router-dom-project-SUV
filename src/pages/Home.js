@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <div className="bg-stone-900 h-screen w-full relative">
         <img
           src="https://cdni.autocarindia.com/ExtraImages/20240227063644_1238976123b.jpeg"

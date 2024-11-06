@@ -11,7 +11,7 @@ const SUVDetails = () => {
   //Number(item.id) === Number(suvId)
  
   return (
-    <div>
+    <div className="text-stone-200">
       <h1 className="text-4xl font-semibold py-6 px-6 lg:px-20">SUV Details</h1>
     <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
     <img src={suv.image} alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />

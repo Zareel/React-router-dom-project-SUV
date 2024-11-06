@@ -20,7 +20,9 @@ const Navbar = () => {
           <NavLink
             to="/admin"
             className={({ isActive }) =>
-              isActive ? "text-yellow-500 underline" : "text-stone-900"
+              isActive
+                ? "text-yellow-500 underline "
+                : "text-stone-900 "
             }
           >
             Admin
