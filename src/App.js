@@ -12,9 +12,10 @@ import Review from "./pages/admin/Review";
 import AdminLayout from "./components/AdminLayout";
 import SUVs from "./pages/admin/SUV";
 import AdminSUVDetails from "./pages/admin/AdminSUVDetails";
-import Pricing from "./pages/admin/Pricing";
-import Photos from "./pages/admin/Photos";
-import SUVinfo from "./pages/admin/SUVinfo";
+
+import AdminSUVinfo from "./pages/admin/AdminSUVinfo";
+import AdminSUVpricing from "./pages/admin/AdminSUVpricing";
+import AdminSUVphoto from "./pages/admin/AdminSUVphoto";
 function App() {
   return (
     <Routes>
@@ -33,9 +34,9 @@ function App() {
           <Route path="suv" element={<SUVs />} />
 
           <Route path="suv/:id" element={<AdminSUVDetails />}>
-            <Route index element={<SUVinfo/>} />
-            <Route path="pricing" element={<Pricing />} />
-            <Route path="photos" element={<Photos />} />
+            <Route index element={<AdminSUVinfo/>} />
+            <Route path="pricing" element={<AdminSUVpricing />} />
+            <Route path="photos" element={<AdminSUVphoto />} />
           </Route>
           
         </Route>

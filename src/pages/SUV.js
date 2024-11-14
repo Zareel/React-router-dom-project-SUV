@@ -9,7 +9,7 @@ const SUV = () => {
     <div>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <div className="flex flex-col items-center pb-14">
-        <h1 className="text-5xl font-semibold p-10">Explore Our SUV Options</h1>
+        <h1 className="text-5xl font-semibold text-stone-200 p-10">Explore Our SUV Options</h1>
         <div className="flex justify-center  w-full flex-wrap gap-10 mx-20">
           {data &&
             data

@@ -26,15 +26,13 @@ const AdminSUVDetails = () => {
           </div>
         </div>
 
-        <h1 className="font-semibold pt-6 pb-2">{suv.title}</h1>
-        <nav className="h-12 w-[300px] border-2 border-stone-700  text-lg text-yellow-500">
-          <ul className="flex gap-12 justify-center h-full items-center">
+       
+        <nav className="h-12 w-[300px] border-2 border-stone-700  text-lg text-yellow-500 mt-12">
+          <ul className="flex gap-12 justify-center h-full items-center font-semibold">
             <NavLink
               to="."
               className={({ isActive }) =>
-                isActive
-                  ? "underline text-red-500 cursor-pointer"
-                  : "text-yellow-500 cursor-pointer"
+                isActive ? "text-red-500" : "text-yellow-500"
               }
             >
               Details
@@ -42,9 +40,7 @@ const AdminSUVDetails = () => {
             <NavLink
               to="pricing"
               className={({ isActive }) =>
-                isActive
-                  ? "underline text-red-500 cursor-pointer"
-                  : "text-yellow-500 cursor-pointer"
+                isActive ? "text-cyan-800 underline" : "text-yellow-500"
               }
             >
               Pricing
@@ -52,9 +48,7 @@ const AdminSUVDetails = () => {
             <NavLink
               to="photos"
               className={({ isActive }) =>
-                isActive
-                  ? "underline text-red-500 cursor-pointer"
-                  : "text-yellow-500 cursor-pointer"
+                isActive ? "text-cyan-800 underline" : "text-yellow-500"
               }
             >
               Photos
@@ -62,7 +56,7 @@ const AdminSUVDetails = () => {
           </ul>
         </nav>
 
-        <Outlet />
+        <Outlet context={{suv}} />
       </div>
     </div>
   );
